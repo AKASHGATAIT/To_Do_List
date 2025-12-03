@@ -1,0 +1,112 @@
+/* styles.css */
+* {
+  /* Make the margin and padding 0,0 using the universal selector (*) */
+  margin: 0;
+  padding: 0;
+  /* It is a CSS property that controls how the browser calculates the width and height of an element. */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* It is use for make the Mixing background color in our webpage */
+  background: linear-gradient(#ff00dd, #0000ff);   
+  /* Here color means the text color */
+  color: #ffffff;
+  /* Set the content property using Display flex, it will flex the div content in the body */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* set the height on 100 vh mens whole page of the browser */
+  height: 100vh;
+}
+
+.container {
+  background-color: #1e1e1e;
+  /* background-color: white; */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  /* Use for center the H1 in the given containear */
+  text-align: center;
+  /* Margin from the bottom side only */
+  margin-bottom: 20px;
+  /* Use for giving text size */
+  font-size: 24px;
+}
+
+/* Modify the input tex portion and the button both */
+.input-container {
+  /* Using flex property we can give the gap between text input and the button */
+  display: flex;
+  /* Use for give space between tow content */
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Modify the input tex portion only */
+input[type="text"]{
+  width: 70%;
+  padding: 10px;
+  background-color: #333333;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  /* it is use for remove the out line of the text box when we write any input */
+  outline: none;
+}
+
+/* Modify the button portion only */
+button{
+  width: 25%;
+  padding: 10px;
+  background-color: #6200ea;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  /* when our coursor go this button then the cursor pointer change in different style */
+  cursor: pointer;
+  /* use for taking time for change the button hover color in 0.3s  */
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #333333;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+li button {
+  background-color: #d32f2f;
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #b71c1c;
+}
